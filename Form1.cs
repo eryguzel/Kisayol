@@ -20,12 +20,12 @@ namespace kisayol2
      
         private void Form1_Load(object sender, EventArgs e)
         {
-            ofd.InitialDirectory = @"C:\Users\hp\Desktop\notepad.ico"; // Seçmek istediðin ico dosyasýnýn yeri
+            ofd.InitialDirectory = @"C:\Users\hp\Desktop\notepad.ico"; // SeÃ§mek istediÃ°in ico dosyasinin yeri
         }
 
         private void buttonexe_Click(object sender, EventArgs e)
         {
-            ofd.Filter =  "Exacutable File|*exe|All Files|*.*"; // kýsayolunu oluþturmak istediðin exe dosyasý
+            ofd.Filter =  "Exacutable File|*exe|All Files|*.*"; // kisayolunu olusturmak istedigin exe dosyasi
             if (ofd.ShowDialog() == DialogResult.OK)
                 textBoxexefile.Text = ofd.FileName;
         }
@@ -33,7 +33,7 @@ namespace kisayol2
         {
             if (ofd.FileName == "")
             {
-                MessageBox.Show("dosya seçin", "Uyarý",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("dosya seÃ§in", "Uyari",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -48,7 +48,7 @@ namespace kisayol2
             shortcut.IconLocation = ofd.InitialDirectory;
             shortcut.TargetPath = ofd.FileName;
             shortcut.Save();
-            MessageBox.Show("Kýsayol baþarýyla oluþturulmuþtur", "Baþarýlý", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+            MessageBox.Show("Kisayol basariyla olusturulmustur", "Basarili", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
         }
 
 
