@@ -1,2 +1,2 @@
 # Kisayol
-exe dosyasının kısayolunu ve simgesini değiştirme
+exe dosyasının kısayolunu oluşturma ve simgesini değiştirme
